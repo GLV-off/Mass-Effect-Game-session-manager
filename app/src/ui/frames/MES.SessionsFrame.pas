@@ -48,8 +48,6 @@ type
     VST_Sessions: TLazVirtualStringTree;
     btn_New: TSpeedButton;
     btn_Del: TSpeedButton;
-    btn_Save: TSpeedButton;
-    btn_Load: TSpeedButton;
     ToolBar: TToolBar;
     procedure btn_DelClick(Sender: TObject);
     procedure btn_NewClick(Sender: TObject);

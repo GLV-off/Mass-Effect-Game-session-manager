@@ -1,15 +1,15 @@
 inherited SessionsFrame: TSessionsFrame
-  Height = 611
-  Width = 903
-  ClientHeight = 555
-  ClientWidth = 881
+  Height = 667
+  Width = 925
+  ClientHeight = 611
+  ClientWidth = 903
   LCLVersion = '5.99.0.0'
   DesignLeft = 536
   DesignTop = 341
   object VST_Sessions: TLazVirtualStringTree[0]
     Left = 0
-    Height = 516
-    Top = 39
+    Height = 576
+    Top = 35
     Width = 196
     Align = alLeft
     DefaultText = 'Node'
@@ -21,9 +21,10 @@ inherited SessionsFrame: TSessionsFrame
   end
   object ToolBar: TToolBar[1]
     Left = 0
-    Height = 39
+    Height = 35
     Top = 0
-    Width = 881
+    Width = 903
+    AutoSize = True
     Caption = 'ToolBar'
     TabOrder = 1
     object btn_New: TSpeedButton
@@ -44,26 +45,12 @@ inherited SessionsFrame: TSessionsFrame
       ImageIndex = 1
       OnClick = btn_DelClick
     end
-    object btn_Save: TSpeedButton
-      Left = 106
-      Height = 33
-      Top = 2
-      Width = 35
-      Images = Images
-    end
-    object btn_Load: TSpeedButton
-      Left = 71
-      Height = 33
-      Top = 2
-      Width = 35
-      Images = Images
-    end
   end
   object VST_Elements: TLazVirtualStringTree[2]
     Left = 204
-    Height = 516
-    Top = 39
-    Width = 677
+    Height = 576
+    Top = 35
+    Width = 699
     Align = alClient
     DefaultText = 'Node'
     Header.AutoSizeIndex = 0
@@ -78,8 +65,8 @@ inherited SessionsFrame: TSessionsFrame
   end
   object Splitter1: TSplitter[3]
     Left = 196
-    Height = 516
-    Top = 39
+    Height = 576
+    Top = 35
     Width = 8
   end
   object Images: TImageList[4]
