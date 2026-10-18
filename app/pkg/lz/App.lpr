@@ -10,7 +10,12 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, MES.MainForm
+  Forms,
+  MES.MainForm,
+  MES.SessionsFrame,
+  MES.SessionInputFrame,
+  MES.Contracts,
+  MES.Backend
   { you can add units after this };
 
 {$R *.res}

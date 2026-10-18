@@ -1,9 +1,35 @@
 object MainForm: TMainForm
   Left = 700
-  Height = 240
+  Height = 409
   Top = 461
-  Width = 320
+  Width = 724
   Caption = 'MainForm'
   DesignTimePPI = 144
+  Menu = MainMenu
   LCLVersion = '5.99.0.0'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object MainMenu: TMainMenu
+    Left = 24
+    Top = 16
+    object mi_Main: TMenuItem
+      Caption = 'Меню'
+      object mi_Load: TMenuItem
+        Caption = 'Загрузить'
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Сохранить'
+      end
+      object mi_Sep: TMenuItem
+        Caption = '-'
+      end
+      object mi_Exit: TMenuItem
+        Caption = 'Выход'
+        OnClick = mi_ExitClick
+      end
+    end
+    object mi_About: TMenuItem
+      Caption = 'О Программе'
+    end
+  end
 end
